@@ -19,7 +19,6 @@ const SectionCellGroup = styled.div`
   margin: 0 auto 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
   padding: 0 20px;
 
   @media (max-width: 800px) {

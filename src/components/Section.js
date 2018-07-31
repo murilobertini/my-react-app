@@ -4,17 +4,18 @@ import Wave from '../components/Wave';
 
 
 const SectionGroup = styled.div`
-    background: url(${props => props.image});
-    height: 720px;
-    background-size: cover;
-    display: grid;
-    grid-template-rows: 300px auto;
-    grid-gap: 20px;
-    position: relative;
-
-    @media (max-width 640px) {
-        height: 820px;
-    }
+	margin: 100px 0 0;
+	background: url(${props => props.image});
+	background-size: cover;
+	height: 720px;
+	display: grid;
+	grid-template-rows: 300px auto;
+	grid-gap: 20px;
+	position: relative;
+	
+	@media (max-width: 640px) {
+		height: 820px;
+	}
 `
 
 const SectionLogo = styled.img`
@@ -25,7 +26,7 @@ const SectionLogo = styled.img`
 
 const SectionTitleGroup = styled.div`
 	max-width: 800px;
-	margin: 0 40px;
+	margin: 0 auto;
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: 300px auto;
@@ -33,6 +34,7 @@ const SectionTitleGroup = styled.div`
 
 	@media (max-width: 720px) {
 		grid-template-columns: 1fr;
+		margin: 0 40px;
 	}
 `
 
